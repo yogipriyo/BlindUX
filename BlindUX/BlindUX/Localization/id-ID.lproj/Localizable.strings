@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  BlindUX
+
+  Created by Yogi Priyo on 20/09/20.
+  
+*/
+
+"login_button_title" = "Masuk";
+"login_welcome_text" = "Selamat datang di halaman login";
+"login_decription_label" = "Silahkan masukkan email & password anda";
+"homepage_welcome_text" = "Selamat datang di beranda";
+"email_label" = "Email";
+"email_text_field_name" = "Kolom email";
+"password_label" = "Password";
+"password_text_field_name" = "Kolom password";
+"current_text_field_prefix" = "Anda sekarang berada di";
+"unrecognized_code" = "Kode tidak dikenali";
+"morse_code_dot" = "Titik";
+"morse_code_dash" = "Garis";
+"empty_translated_text" = "Text masih kosong";
+"open_central_menu" = "Menu tengah terbuka";
+"close_central_menu" = "Menu tengah tertutup";
+"stay_on_current_page" = "Tetap di halaman ini";
+"back_to_previous_page" = "Kembali ke halaman sebelumnya";
+"submit_form" = "Mengirim formulir";
+"submit_form_prompt_question" = "Apakah anda ingin mengirim formulir ini? geser kanan untuk mengirim atau geser kiri untuk batal";
+"only_has_single_field" = "Hanya terdapat 1 kolom";
+"last_field" = "Ini kolom terakhir";
+"first_field" = "Ini kolom paling awal";
+"move_to_the_next_field" = "Pindah ke kolom berikutnya";
+"move_back_to_previous_field" = "Pindah kembali ke kolom sebelumnya";
+"has_no_field" = "Halaman ini tidak mempunyai kolom";
+"result_text" = "Hasil";
+"delete" = "Hapus";
+"combined_result_text" = "Kombinasi hasil";

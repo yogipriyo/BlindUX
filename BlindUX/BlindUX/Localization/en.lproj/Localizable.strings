@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  BlindUX
+
+  Created by Yogi Priyo on 20/09/20.
+  
+*/
+
+"login_button_title" = "Login";
+"login_welcome" = "Welcome to login page";
+"homepage_welcome_text" = "Welcome to homepage";
+"login_decription_label" = "Please fill in your email & password";
+"email_label" = "Email";
+"email_text_field_name" = "Email text field";
+"password_label" = "Password";
+"password_text_field_name" = "Password text field";
+"current_text_field_prefix" = "Now you are on the";
+"unrecognized_code" = "Unrecognized code";
+"morse_code_dot" = "Dot";
+"morse_code_dash" = "Dash";
+"empty_translated_text" = "Text is empty";
+"open_central_menu" = "Open central menu";
+"close_central_menu" = "Close central menu";
+"stay_on_current_page" = "Stay on current page";
+"back_to_previous_page" = "Back to previous page";
+"submit_form" = "Submit form";
+"submit_form_prompt_question" = "Do you want to submit this form?, swipe right to confirm or swipe left to cancel";
+"only_has_single_field" = "You only have one field";
+"last_field" = "This is the last field";
+"first_field" = "This is the first field";
+"move_to_the_next_field" = "Move to the next field";
+"move_back_to_previous_field" = "Move back to previous field";
+"has_no_field" = "This page does not have any field";
+"result_text" = "Result";
+"delete" = "Delete";
+"combined_result_text" = "Combined result";

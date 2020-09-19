@@ -16,6 +16,10 @@
 		977D66FD25166E900087D30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977D66FB25166E900087D30E /* Main.storyboard */; };
 		977D66FF25166E920087D30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977D66FE25166E920087D30E /* Assets.xcassets */; };
 		977D670225166E920087D30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977D670025166E920087D30E /* LaunchScreen.storyboard */; };
+		977D671225167C2C0087D30E /* MorseTouchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 977D671125167C2C0087D30E /* MorseTouchView.xib */; };
+		977D672625168A6B0087D30E /* MorseTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D672525168A6B0087D30E /* MorseTouchView.swift */; };
+		977D672B25168A790087D30E /* FormItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D672A25168A790087D30E /* FormItemModel.swift */; };
+		977D673D25168B6A0087D30E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977D673F25168B6A0087D30E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,13 @@
 		977D66FE25166E920087D30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977D670125166E920087D30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		977D670325166E920087D30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977D671125167C2C0087D30E /* MorseTouchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MorseTouchView.xib; path = MorseTouch/MorseTouchView.xib; sourceTree = "<group>"; };
+		977D672525168A6B0087D30E /* MorseTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorseTouchView.swift; path = MorseTouch/MorseTouchView.swift; sourceTree = "<group>"; };
+		977D672A25168A790087D30E /* FormItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormItemModel.swift; path = Models/FormItemModel.swift; sourceTree = "<group>"; };
+		977D673825168B360087D30E /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Main.strings"; sourceTree = "<group>"; };
+		977D673925168B360087D30E /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		977D673E25168B6A0087D30E /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		977D674325168B7C0087D30E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +105,9 @@
 		977D66D525166D260087D30E /* BlindUX */ = {
 			isa = PBXGroup;
 			children = (
+				977D672F25168A7F0087D30E /* Localization */,
+				977D671C25167E3F0087D30E /* Models */,
+				977D671025167C0F0087D30E /* MorseTouch */,
 				977D66D625166D260087D30E /* BlindUX.h */,
 				977D66D725166D260087D30E /* Info.plist */,
 			);
@@ -121,6 +135,31 @@
 				977D670325166E920087D30E /* Info.plist */,
 			);
 			path = BlindUXExamples;
+			sourceTree = "<group>";
+		};
+		977D671025167C0F0087D30E /* MorseTouch */ = {
+			isa = PBXGroup;
+			children = (
+				977D672525168A6B0087D30E /* MorseTouchView.swift */,
+				977D671125167C2C0087D30E /* MorseTouchView.xib */,
+			);
+			name = MorseTouch;
+			sourceTree = "<group>";
+		};
+		977D671C25167E3F0087D30E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				977D672A25168A790087D30E /* FormItemModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		977D672F25168A7F0087D30E /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				977D673F25168B6A0087D30E /* Localizable.strings */,
+			);
+			name = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +240,7 @@
 				TargetAttributes = {
 					977D66D225166D260087D30E = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					977D66DB25166D270087D30E = {
 						CreatedOnToolsVersion = 12.0;
@@ -217,6 +257,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"id-ID",
 			);
 			mainGroup = 977D66C925166D260087D30E;
 			productRefGroup = 977D66D425166D260087D30E /* Products */;
@@ -235,6 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977D671225167C2C0087D30E /* MorseTouchView.xib in Resources */,
+				977D673D25168B6A0087D30E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977D672B25168A790087D30E /* FormItemModel.swift in Sources */,
+				977D672625168A6B0087D30E /* MorseTouchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +343,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				977D66FC25166E900087D30E /* Base */,
+				977D673825168B360087D30E /* id-ID */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -306,8 +352,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				977D670125166E920087D30E /* Base */,
+				977D673925168B360087D30E /* id-ID */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		977D673F25168B6A0087D30E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				977D673E25168B6A0087D30E /* id-ID */,
+				977D674325168B7C0087D30E /* en */,
+			);
+			name = Localizable.strings;
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -317,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -381,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -438,6 +497,7 @@
 		977D66E825166D270087D30E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = igoy.oyirp.com.BlindUX;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +522,7 @@
 		977D66E925166D270087D30E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +546,7 @@
 		977D66EB25166D270087D30E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlindUXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +564,7 @@
 		977D66EC25166D270087D30E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlindUXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
