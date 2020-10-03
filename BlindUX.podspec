@@ -82,9 +82,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "BlindUX/**/*.{h,m,swift}"
+  spec.source_files  = "BlindUX/BlindUX/**/*.{h,m,swift}"
   # spec.source_files = ["Classes/BlindUX/**/*.{swift}"]
-  spec.exclude_files = "BlindUXTests/"
+  # spec.exclude_files = "BlindUX/BlindUXTests/"
 
   # spec.public_header_files = "Classes/**/*.h"
 
