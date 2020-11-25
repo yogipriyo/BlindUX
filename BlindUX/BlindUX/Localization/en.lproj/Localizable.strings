@@ -8,7 +8,6 @@
 
 "login_button_title" = "Login";
 "login_welcome" = "Welcome to login page";
-"homepage_welcome_text" = "Welcome to homepage";
 "login_decription_label" = "Please fill in your email & password";
 "email_label" = "Email";
 "email_text_field_name" = "Email text field";

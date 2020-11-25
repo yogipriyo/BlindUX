@@ -27,7 +27,7 @@ enum ActionType {
     case nothing
 }
 
-protocol MorseTouchViewDelegate: class {
+public protocol MorseTouchViewDelegate: class {
     func displayMorseTouch()
     func sendTranslation(translatedText: String, targetTextField: UITextField)
     func sendForm()

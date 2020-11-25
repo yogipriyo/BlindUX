@@ -9,7 +9,6 @@
 "login_button_title" = "Masuk";
 "login_welcome_text" = "Selamat datang di halaman login";
 "login_decription_label" = "Silahkan masukkan email & password anda";
-"homepage_welcome_text" = "Selamat datang di beranda";
 "email_label" = "Email";
 "email_text_field_name" = "Kolom email";
 "password_label" = "Password";

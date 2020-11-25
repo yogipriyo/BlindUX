@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970CB2A2256595DE002AA364 /* LocalizableExample.strings in Resources */ = {isa = PBXBuildFile; fileRef = 970CB2A4256595DE002AA364 /* LocalizableExample.strings */; };
+		97496833256EC75C0043E98B /* MorseTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D672525168A6B0087D30E /* MorseTouchView.swift */; };
+		97496837256EC7630043E98B /* MorseTouchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 977D671125167C2C0087D30E /* MorseTouchView.xib */; };
+		9749683B256EC7670043E98B /* FormItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D672A25168A790087D30E /* FormItemModel.swift */; };
+		9749683F256EC7C00043E98B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977D673F25168B6A0087D30E /* Localizable.strings */; };
 		977D66DD25166D270087D30E /* BlindUX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977D66D325166D260087D30E /* BlindUX.framework */; };
 		977D66E225166D270087D30E /* BlindUXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66E125166D270087D30E /* BlindUXTests.swift */; };
 		977D66E425166D270087D30E /* BlindUX.h in Headers */ = {isa = PBXBuildFile; fileRef = 977D66D625166D260087D30E /* BlindUX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		977D66F625166E900087D30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66F525166E900087D30E /* AppDelegate.swift */; };
 		977D66F825166E900087D30E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66F725166E900087D30E /* SceneDelegate.swift */; };
-		977D66FA25166E900087D30E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66F925166E900087D30E /* ViewController.swift */; };
-		977D66FD25166E900087D30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977D66FB25166E900087D30E /* Main.storyboard */; };
 		977D66FF25166E920087D30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977D66FE25166E920087D30E /* Assets.xcassets */; };
 		977D670225166E920087D30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977D670025166E920087D30E /* LaunchScreen.storyboard */; };
 		977D671225167C2C0087D30E /* MorseTouchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 977D671125167C2C0087D30E /* MorseTouchView.xib */; };
 		977D672625168A6B0087D30E /* MorseTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D672525168A6B0087D30E /* MorseTouchView.swift */; };
 		977D672B25168A790087D30E /* FormItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D672A25168A790087D30E /* FormItemModel.swift */; };
 		977D673D25168B6A0087D30E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977D673F25168B6A0087D30E /* Localizable.strings */; };
+		97EAEC3725641DC2006B8E7D /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EAEC3525641DC2006B8E7D /* HomepageViewController.swift */; };
+		97EAEC3825641DC2006B8E7D /* HomepageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97EAEC3625641DC2006B8E7D /* HomepageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		970CB2A3256595DE002AA364 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableExample.strings; sourceTree = "<group>"; };
+		970CB2A5256595E3002AA364 /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/LocalizableExample.strings"; sourceTree = "<group>"; };
 		977D66D325166D260087D30E /* BlindUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlindUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977D66D625166D260087D30E /* BlindUX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlindUX.h; sourceTree = "<group>"; };
 		977D66D725166D260087D30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,18 +49,17 @@
 		977D66F325166E900087D30E /* BlindUXExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindUXExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		977D66F525166E900087D30E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		977D66F725166E900087D30E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		977D66F925166E900087D30E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		977D66FC25166E900087D30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		977D66FE25166E920087D30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977D670125166E920087D30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		977D670325166E920087D30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		977D671125167C2C0087D30E /* MorseTouchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MorseTouchView.xib; path = MorseTouch/MorseTouchView.xib; sourceTree = "<group>"; };
 		977D672525168A6B0087D30E /* MorseTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorseTouchView.swift; path = MorseTouch/MorseTouchView.swift; sourceTree = "<group>"; };
 		977D672A25168A790087D30E /* FormItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormItemModel.swift; path = Models/FormItemModel.swift; sourceTree = "<group>"; };
-		977D673825168B360087D30E /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Main.strings"; sourceTree = "<group>"; };
 		977D673925168B360087D30E /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		977D673E25168B6A0087D30E /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		977D674325168B7C0087D30E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		97EAEC3525641DC2006B8E7D /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		97EAEC3625641DC2006B8E7D /* HomepageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomepageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		970CB29925659414002AA364 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				970CB2A4256595DE002AA364 /* LocalizableExample.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		977D66C925166D260087D30E = {
 			isa = PBXGroup;
 			children = (
@@ -126,10 +140,11 @@
 		977D66F425166E900087D30E /* BlindUXExamples */ = {
 			isa = PBXGroup;
 			children = (
+				970CB29925659414002AA364 /* Localization */,
+				97EAEC3425641D9F006B8E7D /* Home */,
+				97EAEC3325641D4F006B8E7D /* Auth */,
 				977D66F525166E900087D30E /* AppDelegate.swift */,
 				977D66F725166E900087D30E /* SceneDelegate.swift */,
-				977D66F925166E900087D30E /* ViewController.swift */,
-				977D66FB25166E900087D30E /* Main.storyboard */,
 				977D66FE25166E920087D30E /* Assets.xcassets */,
 				977D670025166E920087D30E /* LaunchScreen.storyboard */,
 				977D670325166E920087D30E /* Info.plist */,
@@ -160,6 +175,22 @@
 				977D673F25168B6A0087D30E /* Localizable.strings */,
 			);
 			name = Localization;
+			sourceTree = "<group>";
+		};
+		97EAEC3325641D4F006B8E7D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		97EAEC3425641D9F006B8E7D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				97EAEC3525641DC2006B8E7D /* HomepageViewController.swift */,
+				97EAEC3625641DC2006B8E7D /* HomepageViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +323,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EAEC3825641DC2006B8E7D /* HomepageViewController.xib in Resources */,
+				9749683F256EC7C00043E98B /* Localizable.strings in Resources */,
+				970CB2A2256595DE002AA364 /* LocalizableExample.strings in Resources */,
 				977D670225166E920087D30E /* LaunchScreen.storyboard in Resources */,
+				97496837256EC7630043E98B /* MorseTouchView.xib in Resources */,
 				977D66FF25166E920087D30E /* Assets.xcassets in Resources */,
-				977D66FD25166E900087D30E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,9 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				977D66FA25166E900087D30E /* ViewController.swift in Sources */,
+				97EAEC3725641DC2006B8E7D /* HomepageViewController.swift in Sources */,
+				9749683B256EC7670043E98B /* FormItemModel.swift in Sources */,
 				977D66F625166E900087D30E /* AppDelegate.swift in Sources */,
 				977D66F825166E900087D30E /* SceneDelegate.swift in Sources */,
+				97496833256EC75C0043E98B /* MorseTouchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,13 +375,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		977D66FB25166E900087D30E /* Main.storyboard */ = {
+		970CB2A4256595DE002AA364 /* LocalizableExample.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				977D66FC25166E900087D30E /* Base */,
-				977D673825168B360087D30E /* id-ID */,
+				970CB2A3256595DE002AA364 /* en */,
+				970CB2A5256595E3002AA364 /* id-ID */,
 			);
-			name = Main.storyboard;
+			name = LocalizableExample.strings;
 			sourceTree = "<group>";
 		};
 		977D670025166E920087D30E /* LaunchScreen.storyboard */ = {
