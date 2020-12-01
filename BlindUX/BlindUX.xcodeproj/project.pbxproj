@@ -12,6 +12,8 @@
 		97496837256EC7630043E98B /* MorseTouchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 977D671125167C2C0087D30E /* MorseTouchView.xib */; };
 		9749683B256EC7670043E98B /* FormItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D672A25168A790087D30E /* FormItemModel.swift */; };
 		9749683F256EC7C00043E98B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977D673F25168B6A0087D30E /* Localizable.strings */; };
+		97519A742574174B003986EC /* HomepageMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97519A722574174B003986EC /* HomepageMenuCollectionViewCell.swift */; };
+		97519A752574174B003986EC /* HomepageMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97519A732574174B003986EC /* HomepageMenuCollectionViewCell.xib */; };
 		977D66DD25166D270087D30E /* BlindUX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977D66D325166D260087D30E /* BlindUX.framework */; };
 		977D66E225166D270087D30E /* BlindUXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66E125166D270087D30E /* BlindUXTests.swift */; };
 		977D66E425166D270087D30E /* BlindUX.h in Headers */ = {isa = PBXBuildFile; fileRef = 977D66D625166D260087D30E /* BlindUX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		970CB2A3256595DE002AA364 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableExample.strings; sourceTree = "<group>"; };
 		970CB2A5256595E3002AA364 /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/LocalizableExample.strings"; sourceTree = "<group>"; };
+		97519A722574174B003986EC /* HomepageMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		97519A732574174B003986EC /* HomepageMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomepageMenuCollectionViewCell.xib; sourceTree = "<group>"; };
 		977D66D325166D260087D30E /* BlindUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlindUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977D66D625166D260087D30E /* BlindUX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlindUX.h; sourceTree = "<group>"; };
 		977D66D725166D260087D30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +98,15 @@
 				970CB2A4256595DE002AA364 /* LocalizableExample.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		97519A6E25741684003986EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97519A722574174B003986EC /* HomepageMenuCollectionViewCell.swift */,
+				97519A732574174B003986EC /* HomepageMenuCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		977D66C925166D260087D30E = {
@@ -187,6 +200,7 @@
 		97EAEC3425641D9F006B8E7D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				97519A6E25741684003986EC /* Cells */,
 				97EAEC3525641DC2006B8E7D /* HomepageViewController.swift */,
 				97EAEC3625641DC2006B8E7D /* HomepageViewController.xib */,
 			);
@@ -325,6 +339,7 @@
 			files = (
 				97EAEC3825641DC2006B8E7D /* HomepageViewController.xib in Resources */,
 				9749683F256EC7C00043E98B /* Localizable.strings in Resources */,
+				97519A752574174B003986EC /* HomepageMenuCollectionViewCell.xib in Resources */,
 				970CB2A2256595DE002AA364 /* LocalizableExample.strings in Resources */,
 				977D670225166E920087D30E /* LaunchScreen.storyboard in Resources */,
 				97496837256EC7630043E98B /* MorseTouchView.xib in Resources */,
@@ -359,6 +374,7 @@
 				97EAEC3725641DC2006B8E7D /* HomepageViewController.swift in Sources */,
 				9749683B256EC7670043E98B /* FormItemModel.swift in Sources */,
 				977D66F625166E900087D30E /* AppDelegate.swift in Sources */,
+				97519A742574174B003986EC /* HomepageMenuCollectionViewCell.swift in Sources */,
 				977D66F825166E900087D30E /* SceneDelegate.swift in Sources */,
 				97496833256EC75C0043E98B /* MorseTouchView.swift in Sources */,
 			);

@@ -5,20 +5,82 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomepageViewController" customModule="BlindUXExamples" customModuleProvider="target">
             <connections>
+                <outlet property="menuCollectionView" destination="Q5F-No-Xep" id="QIt-6d-RjI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeLabel" destination="9L3-io-aBq" id="eSH-Rd-Qe3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CiP-xK-zjg">
+                    <rect key="frame" x="0.0" y="16" width="375" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, user!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L3-io-aBq">
+                            <rect key="frame" x="16" y="4.5" width="118" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa9-sM-hrG">
+                            <rect key="frame" x="299" y="0.0" width="60" height="30"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="fs9-jh-BZe"/>
+                            </constraints>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0dX-Hy-ysp"/>
+                        <constraint firstAttribute="trailing" secondItem="aa9-sM-hrG" secondAttribute="trailing" constant="16" id="NdN-6s-KYn"/>
+                        <constraint firstItem="9L3-io-aBq" firstAttribute="leading" secondItem="CiP-xK-zjg" secondAttribute="leading" constant="16" id="QTG-AJ-4uG"/>
+                        <constraint firstItem="aa9-sM-hrG" firstAttribute="centerY" secondItem="CiP-xK-zjg" secondAttribute="centerY" id="RS5-PE-fP1"/>
+                        <constraint firstItem="9L3-io-aBq" firstAttribute="centerY" secondItem="CiP-xK-zjg" secondAttribute="centerY" id="eay-hM-vIH"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q5F-No-Xep">
+                    <rect key="frame" x="16" y="62" width="343" height="589"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TBq-Ns-cqA">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Q5F-No-Xep" firstAttribute="top" secondItem="CiP-xK-zjg" secondAttribute="bottom" constant="16" id="C10-cL-rdY"/>
+                <constraint firstItem="CiP-xK-zjg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="FaK-pZ-x15"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Q5F-No-Xep" secondAttribute="bottom" constant="16" id="U3l-TP-te5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CiP-xK-zjg" secondAttribute="trailing" id="Wbt-bW-v4a"/>
+                <constraint firstItem="Q5F-No-Xep" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="atC-sR-CMS"/>
+                <constraint firstItem="CiP-xK-zjg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="df3-Op-hEc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q5F-No-Xep" secondAttribute="trailing" constant="16" id="v4m-f9-0Yt"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="87"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

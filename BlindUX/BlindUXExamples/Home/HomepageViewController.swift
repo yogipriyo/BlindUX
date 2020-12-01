@@ -7,12 +7,16 @@
 
 import UIKit
 
-final class HomepageViewController: UIViewController, MorseTouchViewDelegate {
+final class HomepageViewController: UIViewController, MorseTouchViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var menuCollectionView: UICollectionView!
     
     // MARK: - Properties
     var isLoggedIn: Bool = false
     let morseCodeViewTag: Int = 100
-    var topMenu: [String] = ["Login", "Register", "Menu A", "Menu B", "Menu C"]
+    var topMenu: [String] = ["Login", "Register", "Menu 1", "Menu 2", "Menu 3", "Menu 4"]
     
     // MARK: - Life Cycles
     override func viewDidLoad() {
@@ -20,6 +24,7 @@ final class HomepageViewController: UIViewController, MorseTouchViewDelegate {
 
         // Do any additional setup after loading the view.
         self.setupNavbar()
+        self.setupCollectionView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,6 +39,13 @@ final class HomepageViewController: UIViewController, MorseTouchViewDelegate {
 
     // MARK: - Private Functions
     
+    fileprivate func setupCollectionView() {
+        self.menuCollectionView.dataSource = self
+        self.menuCollectionView.delegate = self
+        self.menuCollectionView.register(UINib(nibName: "HomepageMenuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomepageMenuCollectionViewCell")
+
+    }
+    
     fileprivate func setupNavbar() {
         self.navigationItem.title = "Homepage"
     }
@@ -42,7 +54,6 @@ final class HomepageViewController: UIViewController, MorseTouchViewDelegate {
     
     func readTheMenu() {
 //        if self.isLoggedIn { self.topMenu.remove(at: 0) }
-        
     }
     
     func displayMorseTouch() {
@@ -62,5 +73,17 @@ final class HomepageViewController: UIViewController, MorseTouchViewDelegate {
     
     func backToPreviousPage() {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: - CollectionView Data Source
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomepageMenuCollectionViewCell", for: indexPath) as! HomepageMenuCollectionViewCell
+        cell.setupContent(menuIndex: indexPath.row)
+        return cell
     }
 }
