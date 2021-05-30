@@ -14,6 +14,8 @@
 		9749683F256EC7C00043E98B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977D673F25168B6A0087D30E /* Localizable.strings */; };
 		97519A742574174B003986EC /* HomepageMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97519A722574174B003986EC /* HomepageMenuCollectionViewCell.swift */; };
 		97519A752574174B003986EC /* HomepageMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97519A732574174B003986EC /* HomepageMenuCollectionViewCell.xib */; };
+		97519A812576CD51003986EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97519A7F2576CD51003986EC /* LoginViewController.swift */; };
+		97519A822576CD51003986EC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97519A802576CD51003986EC /* LoginViewController.xib */; };
 		977D66DD25166D270087D30E /* BlindUX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977D66D325166D260087D30E /* BlindUX.framework */; };
 		977D66E225166D270087D30E /* BlindUXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66E125166D270087D30E /* BlindUXTests.swift */; };
 		977D66E425166D270087D30E /* BlindUX.h in Headers */ = {isa = PBXBuildFile; fileRef = 977D66D625166D260087D30E /* BlindUX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +46,8 @@
 		970CB2A5256595E3002AA364 /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/LocalizableExample.strings"; sourceTree = "<group>"; };
 		97519A722574174B003986EC /* HomepageMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		97519A732574174B003986EC /* HomepageMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomepageMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		97519A7F2576CD51003986EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		97519A802576CD51003986EC /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		977D66D325166D260087D30E /* BlindUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlindUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977D66D625166D260087D30E /* BlindUX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlindUX.h; sourceTree = "<group>"; };
 		977D66D725166D260087D30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 		97EAEC3325641D4F006B8E7D /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				97519A7F2576CD51003986EC /* LoginViewController.swift */,
+				97519A802576CD51003986EC /* LoginViewController.xib */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97519A822576CD51003986EC /* LoginViewController.xib in Resources */,
 				97EAEC3825641DC2006B8E7D /* HomepageViewController.xib in Resources */,
 				9749683F256EC7C00043E98B /* Localizable.strings in Resources */,
 				97519A752574174B003986EC /* HomepageMenuCollectionViewCell.xib in Resources */,
@@ -371,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97519A812576CD51003986EC /* LoginViewController.swift in Sources */,
 				97EAEC3725641DC2006B8E7D /* HomepageViewController.swift in Sources */,
 				9749683B256EC7670043E98B /* FormItemModel.swift in Sources */,
 				977D66F625166E900087D30E /* AppDelegate.swift in Sources */,
